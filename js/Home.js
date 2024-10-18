@@ -80,7 +80,7 @@ function rotateImages(panelId, images) {
   setInterval(() => {
     index = (index + 1) % images.length;
     imgTag.src = images[index];
-  }, 5000);
+  }, 10000);
 }
 
 
