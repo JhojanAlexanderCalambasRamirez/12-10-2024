@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos - Museo de Recuerdos</title>
+    <link rel="stylesheet" href="css/Home.css">
+    <script src="js/Home.js" defer></script>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('./Background/B2.jpg'); /* Cambia a B2.jpg para Videos.html */
+            background-size: 1920px 1080px; /* Ajusta la imagen a 1920x1080 */
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+        }
+    </style>
+    <div class="header">
+        <h1>Galería de Fotos</h1>
+        <a href="Home.html" class="button">Volver a Inicio</a>
+    </div>
+    <audio src="sound/Amor.mp3" autoplay></audio>
+    <!-- Galería de fotos estilo museo -->
+    <section class="gallery-container">
+        <!-- Panel 1: Aniversario -->
+        <div class="photo-panel" id="panel1" onclick="openModal('modal1')">
+            <img src="img/aniversario.jpg" alt="Aniversario">
+            <div class="caption">Aniversarios</div>
+        </div>
+
+        <!-- Panel 2: Bebes -->
+        <div class="photo-panel" id="panel2" onclick="openModal('modal2')">
+            <img src="img/bebes.jpg" alt="Bebes">
+            <div class="caption">Los Bebes Bonitos</div>
+        </div>
+
+        <!-- Panel 3: Comida -->
+        <div class="photo-panel" id="panel3" onclick="openModal('modal3')">
+            <img src="img/comida.jpg" alt="Comida">
+            <div class="caption">Comida rica</div>
+        </div>
+
+        <!-- Panel 4: Mi Niña -->
+        <div class="photo-panel" id="panel4" onclick="openModal('modal4')">
+            <img src="img/mi_nina.jpg" alt="Mi Niña">
+            <div class="caption">Mi Niña Bonita</div>
+        </div>
+
+        <!-- Panel 5: Tú y Yo -->
+        <div class="photo-panel" id="panel5" onclick="openModal('modal5')">
+            <img src="img/tu_y_yo.jpg" alt="Tú y Yo">
+            <div class="caption">Tú y Yo</div>
+        </div>
+
+        <!-- Panel 6: Universidad -->
+        <div class="photo-panel" id="panel6" onclick="openModal('modal6')">
+            <img src="img/universidad.jpg" alt="Universidad">
+            <div class="caption">La Bebe Medica</div>
+        </div>
+
+        <!-- Panel 7: Viajes -->
+        <div class="photo-panel" id="panel7" onclick="openModal('modal7')">
+            <img src="img/viajes.jpg" alt="Viajes">
+            <div class="caption">Viajes :)</div>
+        </div>
+    </section>
+
+    <!-- Modales para cada panel de fotos -->
+    <!-- Modal 1: Aniversario -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <p>Este panel captura nuestros dos primeros aniversarios juntos. El primero, una escapada mágica en un glamping en lo alto de una montaña...</p>
+        </div>
+    </div>
+
+    <!-- Modal 2: Bebes -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <p>Juaco y Coco, los perritos adorables que nos han acompañado desde el principio...</p>
+        </div>
+    </div>
+
+    <!-- Modal 3: Comida -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <p>Los momentos compartidos disfrutando de nuestras comidas favoritas...</p>
+        </div>
+    </div>
+
+    <!-- Modal 4: Mi Niña -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <p>Captura la ternura y bondad de la persona que amo...</p>
+        </div>
+    </div>
+
+    <!-- Modal 5: Tú y Yo -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <p>Momentos inolvidables que reflejan nuestra relación...</p>
+        </div>
+    </div>
+
+    <!-- Modal 6: Universidad -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <p>Tu esfuerzo en la carrera de medicina y lo orgulloso que estoy...</p>
+        </div>
+    </div>
+
+    <!-- Modal 7: Viajes -->
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <p>Los viajes que hemos compartido, creando recuerdos inolvidables...</p>
+        </div>
+    </div>
+</body>
+</html>
